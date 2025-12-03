@@ -1,63 +1,40 @@
-# Movie-Review-Sentiment-Analysis
-A machine learning project that predicts movie review sentiment (positive/negative) using Logistic Regression, Random Forest and Linear SVC. Includes complete data preprocessing, model training, evaluation metrics and a Tkinter GUI for real-time review prediction.
-Project Features
+# Movie-Reviews-Sentiment-Analysis
+Sentiment Analysis of Movie Reviews is either positive or negative review, the dataset which is used is "IMDB Dataset of 50K Movie Reviews" and the following machine learning which I used is Logistic Regression , Random Forest and LinearSVC.
 
-Text preprocessing (cleaning, stopwords removal, TF-IDF)
+## 📦 Dataset Required
 
-Multiple ML models:
+This project uses the [IMDB Dataset of 50K Movie Reviews](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews).
 
-Logistic Regression
+### 🔽 Download Instructions:
 
-Random Forest
+1. Go to the Kaggle link:  
+   https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
 
-Linear SVC
+2. Download the ZIP file and extract it.
 
-
-Evaluation metrics:
-
-Accuracy, Precision, Recall, F1-Score, Confusion Matrix
+3. Place `IMDB Dataset.csv` inside the project folder like this:
 
 
-Exports evaluation results to evaluation_results.xlsx
 
-Simple GUI to input a review and get prediction from all models
+How to Run the Project:
+ 1. Make sure you have the file IMDB Dataset.csv in the same folder.
+ 2. Run the Python file:
+      [python model.py]
+ 3. Wait for a few seconds — the models will be trained (faster version).
+ 4. A window (GUI) will open where you can paste any movie review.
+ 
+Sample Review to Test
 
+You can try entering this in the GUI box:
 
-Accuracy Summary
+1. This movie was an emotional rollercoaster. The story was powerful and the acting was just perfect!
 
-Logistic Regression: ~78%
+Or try a negative one:
 
-Random Forest: ~80%
+2. The movie was really boring and slow. I fell asleep halfway through. Total waste of time.
 
-Linear SVC: ~80%
+or
 
+3. Decent movie. Not the best I've seen, but definitely worth a one-time watch.
 
-How to Run
-
-1. Install required libraries:
-
-pip install pandas numpy scikit-learn nltk tkinter openpyxl
-
-2. Run the application:
-
-python main.py
-
-3. A GUI window opens → enter any movie review → click Predict Sentiment
-
-
-Technologies Used
-
-Python
-Scikit-Learn
-NLTK
-Pandas & NumPy
-Tkinter
-TF-IDF Vectorizer
-
-
-What You Learn
-
-NLP basics
-Text preprocessing
-ML model training & evaluation
-Integrating ML with GUI applications
+After clicking "Predict Sentiment", you’ll get results from 3 models.
